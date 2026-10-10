@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadreck Ngomane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #101214;
+      --ink: #f2f0eb;
+      --muted: #a7a39b;
+      --card: #1a1d21;
+      --line: #2c3138;
+      --accent: #d6ff4a;
+    }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+    .navbar {
+      background: var(--bg) !important;
+      border-bottom: 1px solid var(--line);
+    }
+    .navbar-brand, .nav-link { color: var(--ink) !important; letter-spacing: 0.04em; }
+    .nav-link:hover { color: var(--accent) !important; }
+    .hero { padding-top: 8rem; }
+    .eyebrow {
+      color: var(--accent);
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    .card {
+      background: var(--card);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+    }
+    .card-img-top { height: 190px; object-fit: cover; filter: saturate(0.85); }
+    .badge-tool {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      font-weight: 500;
+    }
+    .btn-accent {
+      background: var(--accent);
+      color: #101214;
+      border: none;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+    .btn-accent:hover { background: #e7ff8a; color: #101214; }
+    .btn-ghost {
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .contact-row {
+      border-top: 1px solid var(--line);
+      padding: 1rem 0;
+    }
+    .contact-row a { color: var(--ink); text-decoration: none; }
+    .contact-row a:hover { color: var(--accent); }
+    .label { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">SN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container hero pb-5">
+    <p class="eyebrow">Data analyst · Johannesburg</p>
+    <h1 class="display-5">Shadreck Ngomane</h1>
+    <p class="col-lg-8" style="color: var(--muted);">
+      PostgreSQL, Python, SQL, Power BI, and DAX. Work is reported at the grain of the data,
+      with the source and the check beside the chart.
+    </p>
+  </header>
+
+  <main class="container pb-5" id="projects">
+    <p class="eyebrow">Selected work</p>
+    <h2 class="mb-4">ZA Pulse</h2>
+    <div class="card mb-4">
+      <img
+        src="https://raw.githubusercontent.com/ShadrackHero/za-pulse-covid19-analytics/main/docs/Screenshot/Cover.png"
+        class="card-img-top"
+        alt="ZA Pulse cover">
+      <div class="card-body p-4">
+        <span class="badge badge-tool mb-3">PostgreSQL · Python · Power BI · DAX</span>
+        <p>
+          Provincial COVID-19 series for South Africa, 1 March 2020 – 31 December 2022.
+          Grain is province × report date. There is no South Africa fact row. Vaccination is doses, not people.
+          Tagged v1.0.
+        </p>
+        <a class="btn btn-accent me-2" href="https://github.com/ShadrackHero/za-pulse-covid19-analytics" target="_blank">View repository</a>
+        <a class="btn btn-ghost" href="https://github.com/ShadrackHero/za-pulse-covid19-analytics/blob/main/docs/day-10-validation.md" target="_blank">Read the checks</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://raw.githubusercontent.com/ShadrackHero/za-pulse-covid19-analytics/main/docs/Screenshot/Pulse.png" class="card-img-top" alt="Pulse page">
+          <div class="card-body">
+            <h3 class="h6">Pulse</h3>
+            <p class="mb-0" style="color: var(--muted);">National stock, 7-day pace, burden per 100,000.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://raw.githubusercontent.com/ShadrackHero/za-pulse-covid19-analytics/main/docs/Screenshot/Provinces.png" class="card-img-top" alt="Provinces page">
+          <div class="card-body">
+            <h3 class="h6">Provinces</h3>
+            <p class="mb-0" style="color: var(--muted);">Who was hit hardest per capita in the window.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://raw.githubusercontent.com/ShadrackHero/za-pulse-covid19-analytics/main/docs/Screenshot/vaccination.png" class="card-img-top" alt="Vaccination page">
+          <div class="card-body">
+            <h3 class="h6">Vaccination</h3>
+            <p class="mb-0" style="color: var(--muted);">Published doses and coverage. Not people vaccinated.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container pb-5" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="mb-4">Get in touch</h2>
+    <div class="contact-row">
+      <div class="label">Email</div>
+      <a href="mailto:shadrackherot@gmail.com">shadrackherot@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <div class="label">LinkedIn</div>
+      <a href="https://www.linkedin.com/in/shadreck-ngomane" target="_blank">linkedin.com/in/shadreck-ngomane</a>
+    </div>
+    <div class="contact-row">
+      <div class="label">Phone</div>
+      <a href="tel:+27760562528">+27 76 056 2528</a>
+    </div>
+    <div class="contact-row">
+      <div class="label">GitHub</div>
+      <a href="https://github.com/ShadrackHero" target="_blank">github.com/ShadrackHero</a>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">Shadreck Ngomane · Johannesburg · ZA Pulse v1.0</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
