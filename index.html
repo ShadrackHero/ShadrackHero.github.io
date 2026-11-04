@@ -9,7 +9,8 @@
   <title>SHADRECK NGOMANE | Data & Analytics Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
     rel="stylesheet">
 
   <style>
@@ -29,20 +30,26 @@
       --radius: 20px;
     }
 
+
     html[data-theme="dark"] {
       color-scheme: dark;
-      --bg: #0e1626;
-      --surface: #16213a;
-      --surface-soft: #1d2b48;
-      --text: #eef2f8;
-      --muted: #aab6ca;
-      --line: #2b3955;
-      --navy: #eef2f8;
+
+      --bg: #000000;
+      --surface: #101010;
+      --surface-soft: #1a1a1a;
+
+      --text: #f5f5f5;
+      --muted: #a3a3a3;
+      --line: #292929;
+
+      --navy: #f5f5f5;
       --accent: #f0b73a;
-      --accent-soft: #302714;
+      --accent-soft: #29200c;
       --teal: #4fd1c5;
-      --shadow: 0 18px 45px rgba(0, 0, 0, .22);
+
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
     }
+
 
     * {
       box-sizing: border-box;
@@ -1493,7 +1500,27 @@
         repo: "https://github.com/ShadrackHero/Hybrid-SVIR-ML",
         demo: "",
         featured: false
-      }
+      },
+
+      {
+        title: "SpendWise SA — Personal Finance Analytics",
+        category: "Analytics",
+        icon: "💳",
+        status: "Portfolio project",
+        description: "A full-stack personal finance analytics application built to process, categorize and visualize simulated South African banking transactions. Features a PostgreSQL database, FastAPI REST endpoints, transaction management, interactive dashboards and monthly financial insights.",
+        tools: [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "JavaScript",
+          "Chart.js"
+        ],
+        image: "https://raw.githubusercontent.com/ShadrackHero/spendwise-sa/main/docs/screenshots/Dashboard1.png",
+        repo: "https://github.com/ShadrackHero/spendwise-sa",
+        demo: "",
+        featured: false
+      },
+
       // Example for a future project:
       // {
       //   title: "Project name",
